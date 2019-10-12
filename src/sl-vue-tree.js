@@ -163,6 +163,7 @@ export default {
 
         // define the all ISlTreeNodeModel props
         title: nodeModel.title,
+        author: nodeModel.author,
         isLeaf: !!nodeModel.isLeaf,
         children: nodeModel.children ? this.getNodes(nodeModel.children, path, isExpanded) : [],
         isSelected: !!nodeModel.isSelected,
